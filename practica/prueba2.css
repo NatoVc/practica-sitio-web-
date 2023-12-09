@@ -1,0 +1,200 @@
+html {
+  background-color: bisque;
+  background-size: cover;
+  background-image: url(file:///C:/Users/renat/Downloads/casa.jpg);
+}
+/*un estilizado general para toda la pagina*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/*estilo para el container*/
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+/*estilo para el menu de los link posicionada arriba de la pagina*/
+.arriba{
+  max-width: 1000px;
+  background-color: #333;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-left: 5px;
+  align-items: center;
+}
+/*estilizo el menu para que la lista se ponga de forma horizontal*/
+.menu-horizontal{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.menu-horizontal > li > a{
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+.menu-horizontal > li:hover{
+  background-color: red;
+}
+/*lista de menu para que el contenido de las listas se pongan de modo vertical*/
+.menu-vertical{
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 200px;
+  background-color: rgba(0, 0, 0, .5);
+}
+.menu-horizontal > li:hover .menu-vertical{
+  display: block;
+}
+.menu-vertical li:hover{
+  background-color: black;
+}
+.menu-vertical li a{
+  display: block;
+  color: white;
+  padding: 15px 15px 15px 20px;
+  text-decoration: none;
+}
+main, nav{
+    margin-bottom: 50px;
+}
+/*estilizo el h1*/
+h1{
+    color: #ff4500; 
+    text-align: center;
+}
+/*estilizo las imagenes*/
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 430px;
+}
+/*estilizo las imagenes para que se pueda mostrar los gif*/
+section .gif{
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+  justify-content: center;
+}
+/*pongo un cursor para cuando interactue con la imagen*/
+section .gif:hover{
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+  margin: 5px;
+}
+/*pongo las imagen y pongo unos gif para que reemplaze a las imagenes cuando se interactue*/
+img:nth-child(1):hover {
+  content: url(https://media.tenor.com/3NSgZhrYw4kAAAAC/jujutsu-kaisen-shibuya-incident.gif);
+}
+
+img:nth-child(2):hover {
+  content: url(https://media.tenor.com/7IIypOJh0qUAAAAC/dr-stone.gif);
+}
+
+img:nth-child(3):hover {
+  content: url(https://media.tenor.com/4R2KpIqHhPAAAAAd/aot-attack-on-titan.gif);
+}
+
+img:nth-child(4):hover {
+  content: url(https://media.tenor.com/ex3kjWMZ4ScAAAAC/sky-kimionawa.gif);
+}
+
+img:nth-child(5):hover {
+  content: url(https://media.tenor.com/YaBhkxRKJVIAAAAC/your-lie.gif);
+}
+ul li{
+  display: flex;
+}
+/*estilizo el h2*/
+h2{
+  color: #ff4500; 
+  text-align: center;
+}
+/*estilizo mas imagenes para cuando se interactue se ponga un gif*/
+#mas:nth-child(1):hover{
+  content: url(https://media1.tenor.com/m/_t4MHA6eeWwAAAAd/solo-leveling-trailer.gif);
+}
+#mas:nth-child(2):hover{
+  content: url(https://media1.tenor.com/m/GFIAjQpxgWcAAAAd/classroom-of-the-elite.gif);
+}
+#mas:nth-child(3):hover{
+  content: url(https://media.tenor.com/6_QERl0CbaUAAAAM/kaiju-no-8-kafka.gif);
+}
+#mas:nth-child(4):hover{
+  content: url(https://media1.tenor.com/m/HwNWfl_-wcsAAAAC/rin243109-blue-exorcist.gif);
+}
+#mas:nth-child(5):hover{
+  content: url(https://media1.tenor.com/m/9ZCY_acnM6AAAAAC/given-anime.gif);
+}
+
+@media(max-width: 768px){
+  .arriba{
+  max-width: 1000px;
+  background-color: #333;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-left: 5px;
+  align-items: center;
+}
+/*estilizo el menu para que la lista se ponga de forma horizontal*/
+.menu-horizontal{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.menu-horizontal > li > a{
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+.menu-horizontal > li:hover{
+  background-color: red;
+}
+/*lista de menu para que el contenido de las listas se pongan de modo vertical*/
+.menu-vertical{
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 200px;
+  background-color: rgba(0, 0, 0, .5);
+}
+.menu-horizontal > li:hover .menu-vertical{
+  display: block;
+}
+.menu-vertical li:hover{
+  background-color: black;
+}
+.menu-vertical li a{
+  display: block;
+  color: white;
+  padding: 15px 15px 15px 20px;
+  text-decoration: none;
+}
+}
+footer{
+  background: #333;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}
+/*agrego un footer con el copyright*/
+footer p{
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+  padding: 10px;
+}

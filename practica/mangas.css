@@ -1,0 +1,204 @@
+#lmao {
+    background-image: url(an.jpg);
+    background-size:cover;
+}
+#Titulo {
+    width: 80%;
+    max-width: 800px;
+    color: deeppink;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin:40px auto;
+    padding: 25px;
+    background-color: ghostwhite;
+    border: 5px ;
+    border-radius: 5px;
+    box-shadow: 4mm whitesmoke;
+}
+video {
+    display: block;
+    margin: 20px auto;
+    margin-top: 5cm; 
+    max-width: 100%;
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(210, 147, 147, 0.523); 
+}
+#hola {
+    width: 80%; 
+    max-width: 700px; 
+    display: block; 
+    margin: 0 auto;
+    background-color: rgb(191, 255, 127);
+}
+#cabeza {
+    background: linear-gradient(45deg, #FFD700, #FF6347);
+    margin: 4cm;
+    padding: 0;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: initial;
+}
+#cabeza h1 {
+    text-align: center;
+}
+ul {
+    color:rgb(25, 0, 255);
+}
+#listas {
+    background-color: azure;
+    text-align:initial;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: darkgoldenrod;
+    margin: auto;
+}
+#uno, #dos, #tres, #cuatro, #cinco, #seis, #siete, #ocho, #nueve, #diez, #once {
+    margin-right: 1.5cm;
+    display:inline-block;
+    border-radius: 8px; 
+    border-style: inset;
+    border-color:darkgoldenrod;
+    border-width: 3mm;
+    padding: 10px;
+    text-align: center;
+    background-color: #f0f0f0;
+    width: 80%;
+    max-width: 350px;
+}
+#a, #b, #c, #d, #e, #f, #g, #h, #j, #k, #l {
+    margin-left: 15cm;
+    margin-right: 15cm;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    margin:40px auto;
+    border-radius: 8px; 
+    background-color: #974949;
+    width: 80%;
+    max-width: 350px; 
+    border-style:inset;
+    border-width: 2mm;
+    border-color: cornflowerblue;
+    color: beige;
+}
+#op, #DB, #dr, #conan, #hx, #jjk, #brs, #dn, #mns, #aot, #kim {
+    display: block;
+    margin:40px auto;
+    border-radius: 8px; 
+    border-style: inset;
+    border-color: darkmagenta;
+    border-width: 3mm;
+}
+
+.tor {
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+    background-color: antiquewhite;
+}
+
+#manga {
+    background-color:darkcyan;
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+    margin-left: 2cm;
+    margin-right: 2cm;
+    padding: 0.5cm;
+    border-style:inherit;
+}
+
+#abstracto {
+    background-color: #3498db; /* Color de fondo */
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombreado leve aplicado a tal caja*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Color del texto */
+    font-family: 'Arial', sans-serif;
+}
+/*estilizamiento de los footer en general siguiendo y aplicando temas de ejercicios hechos en clase anteriormente, hecho con renato a ojo*/
+
+.class {
+    display: block;
+    height: 40%;
+    width:100% ;
+    max-width: 100px;
+}
+#class {
+    width: 100%;
+    max-width: 70px;
+}
+#tocar {
+    display: flex;
+    border-left: 4cm;
+    background-color:goldenrod ;
+}
+b {
+    color: #333;
+}
+@media(max-width: 768px){
+    .class {
+        display: block;
+        height: 20%;
+        width: 50% ;
+        max-width: 50px;
+    }
+    #class {
+        width: 100%;
+        max-width: 70px;
+    }
+    #tocar {
+        display: inline-block;
+        border-left: 2cm;
+        background-color:goldenrod ;
+    }
+    #uno, #dos, #tres, #cuatro, #cinco, #seis, #siete, #ocho, #nueve, #diez, #once,
+    #a, #b, #c, #d, #e, #f, #g, #h, #j, #k, #l {
+        margin: 0.5px;
+        padding: 0.5px;
+    }
+    #op, #DB, #dr, #conan, #hx, #jjk, #brs, #dn, #mns, #aot, #kim {
+        margin: 5px auto;
+        padding: 5px;
+        width: 20%;
+        max-width: 250px;
+    }
+
+    .tor {
+        display: flex;
+        flex-direction: row;
+        margin: 40px;
+    }
+    #cabeza{
+        background: linear-gradient(45deg, #FFD700, #FF6347);
+        margin: 5cm;
+        padding: 1cm;
+        height: 50%;
+        border-radius: 7px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        text-align: justify;
+}
+#cabeza h1 {
+        text-align: center;
+}
+}
+footer{
+    background: #333;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+  }
+footer p{
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+    padding: 10px;
+}
+footer p .bb{
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+    padding: 10px;
+}

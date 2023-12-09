@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: middle;
+}
+
+body{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Estilo del encabezado fijo en la parte superior */
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.navbar{
+    display: flex;
+    margin-right: 10px;
+}
+.logo{
+    margin-left: 30px;
+}
+/* Estilo del logotipo en la barra de navegación */
+.logo img{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+
+.navbar a{
+    display: block;
+    padding: 23px 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover{
+    background: #ffffff;
+
+}
+/* Estilo de los enlaces en la barra de navegación */
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* Estilo del encabezado principal con imagen de fondo */
+.header{
+    height: 60vh !important;
+    background-image: url(https://images.pexels.com/photos/688890/pexels-photo-688890.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* Estilo del título principal */
+.title{
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+}
+/* Estilo del párrafo principal */
+p{
+    margin-bottom: 40px;
+    font-size: 22px;
+    color: rgb(80, 21, 21);
+    padding: 0 100px;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #9c27b0;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background: #9c27b0;
+}
+.btn:hover{
+    background: none;
+}
+/* Estilo para el grupo de botones en la página de inicio */
+.btn-home{
+    display: flex;
+}
+
+.btn-home a{
+    margin: 0 10px;
+}
+/*Estilo al contenido principal*/
+.content{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*Estilo del area*/
+.sau{
+    padding: 580px;
+    background: #1f1d1d;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+/* Estilo de la sección de cajas de servicios */
+.box-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    left: 100%;
+}
+
+.box-container .box{
+    height: 25rem;
+    width: 45%;
+    background: #ffffff;
+    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 .3 5rem rgb(250, 250, 250);
+    margin: 1rem;
+    flex-direction: row;
+}
+/* Estilo del título en las cajas de servicios */
+h2 title{
+    margin-top: 0;
+    align-items: flex-start;
+}
+
+/* Estilo del h3*/
+.box-container .box h3{
+    font-size: 20px;
+    color: #9c27b0;
+    margin-top: 2%;
+    margin-bottom: 10px;
+}
+/* Estilo del párrafo en las cajas de servicios */
+.box-container .box p{
+    padding: 0 15px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+/* Estilo de las imágenes con efecto en hover */
+article{
+    position: relative;
+    width: 120px;
+    margin: 0 auto;
+    transition: all .3s ease;
+    margin-bottom: 20px;
+}
+article img:first-child{
+    box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
+    border-radius: 4px;
+    object-fit: cover;
+    width: 100%;
+}
+article img:last-child{
+    position: absolute;
+    width: 120px;
+    bottom: 0;
+    left: 0;
+    right: 10%;
+    margin: auto;
+    transform: translateY(25%);
+    transition: .3s ease;
+    opacity: 0;
+}
+article:hover{
+    transform: 
+    perspective(250px)
+    rotateX(10deg)
+    translateY(-5%)
+    translateZ(0);
+}
+article::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-image: 
+    linear-gradient(
+        to bottom, 
+        transparent 10%,
+        rgba(0, 0, 0, 0.5) 50%
+        rgba(0, 0, 0) 95%
+    );
+    opacity: 0;
+    transition: all .3s ease;
+}
+article:hover::before{
+    opacity: 1;
+}
+article:hover img:last-child{
+    opacity: 1;
+    transform: translateY(10%);
+}
+
+
+.price{
+    background-image: url(https://estaticos-cdn.prensaiberica.es/clip/10438ead-4fa9-4249-b79b-cf6f72051727_16-9-discover-aspect-ratio_default_0.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+}
+/* Estilo de la sección de precios con imagen de fondo */
+.price b{
+    color: rgb(253, 132, 62)
+}
+.contact{
+    padding-top: 20px;
+    background: #171717;
+    padding-bottom: 0;
+
+}
+.contact h2{
+    font-size: 40px;
+}
+
+@media(max-width: 768px) {
+    
+    .header{
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+    .btn{
+        display: inline-block;
+        margin-top: 15px;
+        padding: 2px 10px;
+        border: 1px solid #9c27b0;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        background: #9c27b0;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .sau{
+        padding: 390px;
+        background: #1f1d1d;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    .box-container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        overflow: auto;
+        text-align: center;
+        left: 500%;
+    }
+    
+    .box-container .box{
+        height: 28rem;
+        width: 15rem;
+        background: #ffffff;
+        text-align: center;
+        border-radius: 0.5rem;
+        box-shadow: 0 .3 5rem rgb(250, 250, 250);
+        margin: 0.5rem;
+        flex-direction: row;
+    }
+    
+}
+/*agrego un footer con el copyright*/
+footer{
+    background: #333;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+footer p{
+    margin: 0;
+    font-size: 14px;
+    color: #fff;
+    padding: 10px;
+}
